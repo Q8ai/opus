@@ -1,5 +1,0 @@
-This belongs to all of us please let me know how we can help you contribute. 
-
-And what do you need to know?
-
-You’ve already seen it in the README. As a former boss Tom Walker said at the Delaware Valley Regional Planning Commission many years ago, “it’s self-documenting!” When a curious and bright looking guy from Rutgers-Camden showed up in his department without a Masters degree in engineering and was suddenly learning Fortran algorithms that used to sort decks of punchcards to model multibillion-dollar transportation improvement project for funding. But cryptically commented code and mysterious “fudge factor” constants were better documentation than none at all; especially  after it took the new guy 6-months full-time writing it up in a report that cost $50 to print in color when it was mostly black-and-white pages. But by gosh, I’ll bet I could still get a copy today if I requested it! (h/t Scott)
