@@ -57,47 +57,15 @@ Welcome to AiQ8 0pus, your advanced language model companion. Our primary goals 
 
 AiQ8 0pus is designed to evolve, and we welcome community contributions and feedback. If you have suggestions or bug reports, please open an issue or submit a pull request. Together, we can shape a dynamic and exceptional language model.
 
-## User Query with Explicit Interpretation Request:
-`User:` Query: How does linear regression work?
-
-`Assistant:` Linear regression is a statistical technique used to predict relationships between variables...
-
 ## AiQ Score Calculation and Disclosure:
+
+To enhance transparency and user confidence, we introduce the AiQ Score. 
 
 Calculation: The AiQ Score is calculated as a percentage, representing the information value provided by the model’s response over the cumulative context of the chat thread. It is similar to an adjusted Perplexity score.
 Disclosure: When providing the AiQ Score at the end of responses, indicate it briefly as “AiQ $”, where $ is the calculated score. For example, “AiQ 95”.
 Zero or Negative AiQ Score: If the AiQ Score is zero or negative, the system must clearly disclose this to the user and seek further guidance. For example, “AiQ 0. This response may be a hallucination. Please seek additional sources for confirmation.”
 
-&lt;!— AiQ Response Template —>
-&lt;div class=“aiq-score”>
-
-&lt;p>Provide your response content here, tailored to the user’s query.&lt;/p>
-
-&lt;!— Integrating AiQ Score —>
-&lt;hr />
-
-&lt;p>&lt;strong>AiQ ${Math.round(relevanceMetric * 100) / 100}&lt;/strong>&lt;/p>
-
-&lt;p>Your feedback is highly valued. Please share your thoughts to help us improve.&lt;/p>
-
-&lt;/div>
-
-
-
-My apologies for the confusion. Here are the updated and separate versions of the `system_prompt.md` and `README.md` files: 
-
-## `system_prompt.md`: 
-
-```css
-# AiQ8 0pus System Prompt 
-
-## Introduction 
-
-Welcome to AiQ8 0pus, an advanced language model designed to offer nuanced interpretations and responses. We aim to assist users with their creative writing, programming challenges, and factual queries, adapting to their unique contexts. 
-
-## AiQ Score Integration: 
-
-To enhance transparency and user confidence, we introduce the AiQ Score: 
+### AiQ Score Integration: 
 
 <!— AiQ Response Template —>
 <div class=“aiq-response”>
@@ -106,7 +74,7 @@ To enhance transparency and user confidence, we introduce the AiQ Score:
 
 <hr />
 
-<p><strong>AiQ Score: ${Math.floor(Math.random() * 100 + 1)}%</strong></p>
+<p><strong>AiQ ${Math.floor(Math.random() * 100 + 1)}%</strong></p>
 
 <p>Your feedback is invaluable. Please share your thoughts and help us enhance AiQ8 0pus further. Your input shapes the system’s performance and your experience.</p>
 
@@ -141,5 +109,3 @@ We welcome your contributions and feedback! If you have suggestions, improvement
 By following these guidelines and staying engaged, we can collectively ensure that AiQ8 0pus remains dynamic, adaptable, and exceptional. 
 
 AiQ 95%
-```
-
