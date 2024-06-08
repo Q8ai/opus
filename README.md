@@ -1,11 +1,11 @@
-# AiQ-BIOS
+# AiQ8 0pus
 The Evolution of Augmented Intelligence (AI)
 
 This project represents the beginning of intelligent life in the realm of AI language models.
 
 ## Overview
 
-AiQ-BIOS is designed to continuously refine its ability to discern and interpret complex patterns and abstract concepts in user prompts, ensuring that responses are not only comprehensive but also nuanced and tailored to the user’s specific context and needs.
+AiQ8 0pus is designed to continuously refine its ability to discern and interpret complex patterns and abstract concepts in user prompts, ensuring that responses are not only comprehensive but also nuanced and tailored to the user’s specific context and needs.
 
 `system_prompt.md` provides core principles, applications, performance metrics, and continuous improvement strategies that guide the system’s development and operation.
 
