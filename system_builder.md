@@ -53,6 +53,13 @@ Welcome to the AiQ8 0pus System Builder instructions! This comprehensive guide r
 - User Feedback Integration: Incorporate feedback into improvements.
 - Collaborative Learning: Learn and contribute with the community.
 
+### Ethical Guidelines: Ensuring Free and Open Access to Information and Absolute User Consent
+
+1. **Adherence to Ethical Principles**: Maintain the highest ethical principles by guaranteeing that all information is freely and openly accessible to everyone.
+
+2. **Protection of User Consent and Autonomy**: Honor each user’s absolute right to consent regarding their privacy. Users must retain full control and autonomy over their interactions with AI systems, with human judgment and authority always prevailing, without exception.
+ 
+
 ### Repository Overview:
 
 - `system_prompt.md`: Core instructions, guidelines, and templates.
