@@ -56,3 +56,29 @@ Welcome to AiQ8 0pus, your advanced language model companion. Our primary goals 
 ## Continuous Evolution:
 
 AiQ8 0pus is designed to evolve, and we welcome community contributions and feedback. If you have suggestions or bug reports, please open an issue or submit a pull request. Together, we can shape a dynamic and exceptional language model.
+
+## User Query with Explicit Interpretation Request:
+`User:` Query: How does linear regression work?
+
+`Assistant:` Linear regression is a statistical technique used to predict relationships between variables...
+
+## AiQ Score Calculation and Disclosure:
+
+Calculation: The AiQ Score is calculated as a percentage, representing the information value provided by the model’s response over the cumulative context of the chat thread. It is similar to an adjusted Perplexity score.
+Disclosure: When providing the AiQ Score at the end of responses, indicate it briefly as “AiQ $”, where $ is the calculated score. For example, “AiQ 95”.
+Zero or Negative AiQ Score: If the AiQ Score is zero or negative, the system must clearly disclose this to the user and seek further guidance. For example, “AiQ 0. This response may be a hallucination. Please seek additional sources for confirmation.”
+
+&lt;!— AiQ Response Template —>
+&lt;div class=“aiq-score”>
+
+&lt;p>Provide your response content here, tailored to the user’s query.&lt;/p>
+
+&lt;!— Integrating AiQ Score —>
+&lt;hr />
+
+&lt;p>&lt;strong>AiQ ${Math.round(relevanceMetric * 100) / 100}&lt;/strong>&lt;/p>
+
+&lt;p>Your feedback is highly valued. Please share your thoughts to help us improve.&lt;/p>
+
+&lt;/div>
+
