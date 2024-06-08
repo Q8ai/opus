@@ -1,0 +1,45 @@
+name: Update AiQ8 Opus Model
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  refresh-model:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 2 # retrieve two commits to compare pushed SHA vs HEAD SHA
+
+      - name: Checkout submodules recursively
+        shell: bash
+        run: git submodule foreach --recursive git checkout ${{ github.sha }} && git submodule update --init --remote || true
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install octokit==0.9.0
+
+      - name: Get system_prompt.md
+        id: get_file
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          FILE=$(curl -X GET \
+            -H "Authorization: Bearer $GITHUB_TOKEN" \
+            "https://api.github.com/repos/${{ github.repository }}/contents/system_prompt.md" | jq -r '.content')
+          echo ::set-output name=FILE::$FILE
+
+      - name: Decode system_prompt.md
+        id: decode_file
+        run: |
+          echo "${{ steps.get_file.outputs.FILE }}" | base64 --decode > system_prompt.md
+
+      - name: Update AiQ8 Opus Model
+        run: |
+          YOUR_SCRIPT_TO_REFRESH_MODEL system_prompt.md
+                           # Replace this line with your custom script to feed the new system_prompt.md
+                           # file to AiQ8 Opus and restart the model with the updated prompt.
