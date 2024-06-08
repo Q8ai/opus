@@ -1,39 +1,46 @@
-# AiQ8 0pus
+# AiQ8 0pus: Language Model System
 
-## Overview 
+## Introduction
 
-Welcome to AiQ8 0pus, an innovative language model designed to interpret complex patterns and abstract concepts in user prompts. Our goal is to provide nuanced and contextually relevant responses, adapting to the unique needs of each user. 
+Welcome to AiQ8 0pus, an advanced language model designed to offer tailored and contextually relevant responses. This system is continuously refined to provide exceptional performance and a dynamic user experience.
 
-## Features: 
+## Repository Overview
 
-- Creative Writing Assistance: AiQ8 0pus can assist with generating creative content, offering unique ideas and perspectives. 
-- Programming Challenges: The model provides solutions and insights for programming queries. 
-- Factual Information: Accurate and reliable information is delivered, ensuring a well-informed user base. 
+- `system_prompt.md`: This file contains core instructions, guidelines, and templates that define the system’s responses and behavior. To use the code in this repository effectively, copy and paste the system instructions into the system prompt instructions header of your LLM request. This can be done using a dynamic URL on Hugging Face to facilitate easy iteration and adaptation.
+- `system_builder.md`: Here, you’ll find meta-instructions and strategies for refining and improving the system prompt instructions, ensuring adaptability and continuous improvement.
+- `README.md`: This file provides a comprehensive overview of the project, contribution guidelines, and essential information for users and developers.
 
-## Repository Structure:
+## Getting Started with AiQ8 0pus
 
-- `system_prompt.md`: Contains core instructions and guidelines for the system’s responses and behavior.
-- `system_builder.md`: Includes meta-instructions for refining and improving the system prompt instructions.
-- `README.md`: Provides an overview of the project and relevant information for contributors. 
+To interact with AiQ8 0pus, simply provide your prompts or queries. Our model is designed to offer thorough yet concise responses, providing direct and relevant information. Remember that to use the code provided in this repository, you need to copy and paste the system instructions into the system prompt instructions header of your LLM request.
 
-## Getting Started: 
+## Core Principles and Features
 
-To start using AiQ8 0pus, simply interact with the model by providing prompts or queries. The system will respond accordingly, offering tailored and contextually relevant information. 
+- Comprehensive Responses: We strive for responses that are detailed yet easy to understand.
+- Contextual Depth: Our model offers expandable sections and links to provide additional context or detailed explanations.
+- Proactive Assistance: We adopt a proactive approach, offering solutions and suggestions to enhance the user experience.
+- Feedback Loop: User feedback is valued, and we continuously refine the model based on input.
+- Transparency: We maintain transparency in our system’s functionality and improvement processes.
 
-## Recent Updates:
+## Contributing and Update Guidelines
 
-- Enhanced Detailed Application: Broadening interdisciplinary perspectives for more comprehensive insights.
-- Improved Continuous Improvement Strategies: Efficiently identifying areas for enhancement.
+Contributions and feedback are always welcome! If you have suggestions, improvements, or encounter any issues, please open an issue or submit a pull request. Your input is invaluable to shaping AiQ8 0pus.
 
-## Contributing: 
+- When updating `system_prompt.md`, refer to the meta-instructions in `system_builder.md`.
+- Ensure that changes are clearly documented and versioned for easy reference.
+- Encourage feedback and actively seek contributions from the community to incorporate diverse perspectives.
 
-We welcome contributions and feedback from the community! If you have suggestions or improvements, please open an issue or submit a pull request. Your input is valuable and helps us enhance AiQ8 0pus further. 
+## User Queries Convention
 
-## License: 
+To distinguish user queries in our documentation, we use the following format:
 
-See LICENSE.md
+```
+User: Query: Can you explain [topic] in simple terms?
+Assistant: Absolutely! [Provide explanation in simple language].
+```
 
+## Important Note
 
-## Conclusion: 
+To use the code provided in this repository, copy and paste the system instructions from `system_prompt.md` into the system prompt instructions header of your LLM request. This can be done using a dynamic URL on Hugging Face, making it convenient for iteration and adaptation.
 
-AiQ8 0pus is designed to be a dynamic and adaptable language model, continuously learning and improving to provide exceptional responses. We hope you find it useful and enjoyable to interact with! 
+Together, with your contributions and feedback, we can ensure that AiQ8 0pus remains a dynamic and exceptional language model.
